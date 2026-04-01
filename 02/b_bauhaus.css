@@ -106,7 +106,7 @@ deshalb Positionierungshilfe am Anfang mit transform.translate()*/
 }
 
 .LinienPosition1{
-    top:244px;/*warum hier 244 anstatt255?????*/
+    top:245px;/*warum hier 244 anstatt255?????*/
     left:245px;
 }
 .LinienPosition2{
@@ -114,7 +114,7 @@ deshalb Positionierungshilfe am Anfang mit transform.translate()*/
     left:245px;
 }
 .LinienPosition3{
-    top:244px;/*?????*/
+    top:245px;/*?????*/
     left:355px;
 }
 
