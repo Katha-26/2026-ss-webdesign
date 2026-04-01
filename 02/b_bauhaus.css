@@ -19,6 +19,125 @@ body {
 .poster {
     background-color: var(--bg);
     width: 500px;
-    padding: 40px;
+    height: 700px;
+    
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    position:relative;
+}
+/*Aufteilung der verschieden großen Boxen in verschiedene Größen Klassen*/
+.BoxLaenge1Groeße{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border:10px solid var(--black); 
+}
+.BoxLaenge2Groeße{
+    position:absolute;
+    width:210px;
+    height:100px;
+    border:10px solid var(--black);
+}
+.BoxHoehe2Groeße{
+    position:absolute;
+    width:100px;
+    height:210px;
+    border:10px solid var(--black);
+}
+/*Aufteilung der verschieden farbigen Boxen in verschiedene Farben Klassen*/
+.BoxFarbeWeiß{
+    background: var(--bg);
+}
+.BoxFarbeRot{
+    background:var(--red);
+}
+.BoxFarbeBlau{
+    background:var(--blue);
+}
+.BoxFarbeGelb{
+    background:var(--yellow);
+}
+/* jede Box hat eine eigene Position Klasse*/
+/*was mit Pixelweite in der Mitte wäre ist nicht in der Mitte?? warum das?
+deshalb Positionierungshilfe am Anfang mit transform.translate()*/
+.Box1Position{
+    top:25px;
+    left:135px;
+}
+.Box2Position{
+    top:465px;
+    left:135px;
+}
+.Box3Position{
+    top:135px;
+    left:135px;
+}
+.Box4Position{
+    top:355px;
+    left:355px;
+}
+.Box5Position{
+    top: 355px;
+    left:25px;
+}
+.Box6Position{
+    top: 135px;
+    left:25px;
+}
+.Box7Position{
+    top: 25px;
+    left:245px;
+}
+.Box8Position{
+    top: 25px;
+    left:355px;
+}
+/*Linien:*/
+.LinieHorizontal{
+    position:absolute;
+    background-color:var(--black);
+    width:120px;
+    height:10px;
+}
+.LinieVertikal{
+    position:absolute;
+    background-color:var(--black);
+    width:10px;
+    height:340px;
+}
+
+.LinienPosition1{
+    top:244px;/*warum hier 244 anstatt255?????*/
+    left:245px;
+}
+.LinienPosition2{
+    top:574px;/*?????*/
+    left:245px;
+}
+.LinienPosition3{
+    top:244px;/*?????*/
+    left:355px;
+}
+
+/*Text*/
+.TextGroß{
+    font-size:50px;
+}
+.TextKlein{
+    font-size:25px;
+}
+
+.TextPosition1{
+    position:absolute;
+    top:615px;
+    left:25px;
+}
+.TextPosition2{
+    position:absolute;
+    top:615px;
+    left:270px;
+}
+.TextPosition3{
+    position:absolute;
+    top:640px;
+    left:270px;
 }
