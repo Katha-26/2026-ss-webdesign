@@ -20,6 +20,28 @@
            ============================================================ */
 
         :root {
+            --base:16px;
+            --ratio:1.25;
+
+           
+            --h6: calc(var(--base)*var(--ratio));
+            --h5: calc(var(--h6)*var(--ratio));
+            --h4: calc(var(--h5)*var(--ratio));
+            --h3: calc(var(--h4)*var(--ratio));
+            --h2: calc(var(--h3)*var(--ratio));
+            --h1: calc(var(--h2)*var(--ratio));
+
+            --baseMargin: 8px;
+            --ratioMargin:1.5;
+
+            --h6Margin:calc(var(--baseMargin)*var(--ratioMargin));
+            --h5Margin:calc(var(--h6Margin)*var(--ratioMargin));
+            --h4Margin:calc(var(--h5Margin)*var(--ratioMargin));
+            --h3Margin:calc(var(--h4Margin)*var(--ratioMargin));
+            --h2Margin:calc(var(--h3Margin)*var(--ratioMargin));
+            --h1Margin:calc(var(--h2Margin)*var(--ratioMargin));
+
+            
             
         }
 
@@ -29,6 +51,7 @@
             font-family: Georgia, serif;
             background: #faf9f7;
             color: #1a1a1a;
+            
         }
 
         .page { 
@@ -37,27 +60,49 @@
         }
 
         h1 {
-            
+            font-size:var(--h1);
+            line-height:1.0;
+            margin:var(--h6Margin);
+            letter-spacing:-0.02em;
         }
 
         h2 { 
-
+            font-size:var(--h2);
+            line-height:1.0;
+            margin-top:var(--h2Margin);
+            margin-bottom:var(--h2Margin);
+            letter-spacing:-0.01em;
          }
         h3 { 
-            
+            font-size:var(--h3);
+            line-height:1.0;
+            margin-top:var(--h3Margin);
+            margin-bottom:var(--h3Margin);
          }
         h4 {
-            
+            font-size:var(--h4);
+            line-height:1.0;
+            margin-top:var(--h4Margin);
+            margin-bottom:var(--h4Margin);
          }
         h5 { 
-
+            font-size:var(--h5);
+            line-height:1.0;
+            margin-top:var(--h5Margin);
+            margin-bottom:var(--h5Margin);
          }
         h6 { 
-
+            font-size:var(--h6);
+            line-height:1.0;
+            margin-top:var(--h6Margin);
+            margin-bottom:var(--h6Margin);
          }
 
         p {
-            
+            font-size:var(--base);
+            line-height:1.5;
+            margin-top:var(--baseMargin);
+            margin-bottom:var(--baseMargin);
         }
     </style>
 </head>
