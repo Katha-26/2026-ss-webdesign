@@ -39,8 +39,12 @@ let easterEgg3=" O.O  ._.".repeat(position);
 let easterEgg4=" O.O  ._. ".repeat(position2);
 
 
-document.addEventListener('keydown', function() {
-easterEgg=true;
+document.addEventListener('keydown', function(event) {
+if(event.code==="Space"){
+ easterEgg=true;
+}
+
+   
 });
 if(easterEgg){
 if(position%2===0){
